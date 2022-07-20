@@ -32,6 +32,9 @@
     },
     "date": {
       "type": "datetime"
+    },
+    "rate": {
+      "type": "string"
     }
   }
 }
