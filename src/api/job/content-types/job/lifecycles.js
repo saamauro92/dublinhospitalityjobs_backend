@@ -4,8 +4,8 @@ module.exports = {
 
         try {
             await strapi.plugins['email'].services.email.send({
-                to: "saa.mauro92@gmail.com",
-                from: "saa.mauro92@gmail.com",
+                to: "dublinhospitalityjobs@protonmail.com",
+                from: "dublinhospitalityjobs@protonmail.com",
                 subject: "You Have a new job app",
                 text: `${result.title}+ ${result.description}`
             })
