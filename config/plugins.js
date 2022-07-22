@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-    // ...
     slugify: {
         enabled: true,
         config: {
@@ -11,5 +10,17 @@ module.exports = ({ env }) => ({
             },
         },
     },
-    // ...
+    email: {
+        config: {
+            provider: 'sendgrid',
+            providerOptions: {
+                apiKey: env('SENDGRID_API_KEY'),
+            },
+            settings: {
+                defaultFrom: 'saa.mauro92@gmail.com',
+                defaultReplyTo: 'saa.mauro92@gmail.com',
+            },
+        },
+    },
+
 });
