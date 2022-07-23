@@ -39,6 +39,11 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
