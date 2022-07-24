@@ -7,7 +7,12 @@ module.exports = {
                 to: `${result.email}`,
                 from: "dublinhospitalityjobs@protonmail.com",
                 subject: "Dublin Hospitality Jobs -We have received your message/job position",
-                text: `${result.promo.length > 0 ? "Thank you <br></br> We have received your job position available. <br> </br> Post will be reviewed and posted within 24 hs. " : "Thank you <br></br> We have received your job position available. <br> </br> Please complete your payment in the following link (LINK) <br> </br> Post will be reviewed and posted within 24 hs. "}`
+                text: `${result.promo.length > 0 ? "Thank you, " + result.name +
+                    "We have received your job position available." +
+                    "Post will be reviewed and posted within 24 hs." : "Thank you, " + result.name +
+                    "We have received your job position available." +
+                    "Please complete your payment in the following link (LINK)" +
+                "Post will be reviewed and posted within 24 hs. "}`
 
 
             })
