@@ -47,6 +47,9 @@
     },
     "promo": {
       "type": "string"
+    },
+    "keyword": {
+      "type": "text"
     }
   }
 }
