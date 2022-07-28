@@ -50,6 +50,9 @@
     },
     "keyword": {
       "type": "text"
+    },
+    "howToApply": {
+      "type": "text"
     }
   }
 }
