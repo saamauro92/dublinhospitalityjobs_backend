@@ -5,14 +5,17 @@ module.exports = {
         try {
             await strapi.plugins['email'].services.email.send({
                 to: `${result.email}`,
-                from: "dublinhospitalityjobs@protonmail.com",
-                bcc: "dublinhospitalityjobs@protonmail.com",
+                from: "noreply@protonmail.com",
+                bcc: "saavedra.mauro92@gmail.com",
                 subject: "Dublin Hospitality Jobs -We have received your message/job position",
                 html: `<h1> Thanks ${result.email}! We have received your job </h1>
-                <p> it will be reviewed and posted within 24 hs if not issue was found. </p>
+                <h2> it will be reviewed and posted within 24 hs if not issue was found. </h2>
                 <hr> </hr>
                 <br> </br>
-                ${result.description}
+                <h3>${result.title}</h3>
+                <p>${result.description} </p>
+
+                <span> Please do not reply to this email address </span>
 
                 `
 
